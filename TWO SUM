@@ -1,0 +1,20 @@
+#First day
+#Typical two sum question
+#The first solution came to my mind is to set up 2 indicators,and traversal the list to find the two numbers and return their index.
+#1
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+            for i in range(0,len(nums)):
+              indicator=target-num[i]
+              if indicator in nums[i+1:]:
+                return(i,nums.index(indicator,i+1)
+#2 use dictionary
+     def twoSum(self, nums: List[int], target: int) -> List[int]:
+              TT={}
+              for i in range(0,len(nums)):
+                  if nums[i] in TT:
+                    return [i，TT[nums[i]]];
+                    else:
+                    TT[target-nums[i]]=i
+           
+              
